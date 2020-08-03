@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+
+	margin: 0 auto;
+}
+
+.carousel {
+	position: relative;
+
+	border: 1px solid black;
+	max-width: 114rem;
+	height: 60rem;
+}
+
+.carousel-img {
+	object-fit: cover;
+	width: 114rem;
+	height: 60rem;
+}
+
+.carousel-img:not(:nth-child(2)) {
+	visibility: hidden;
+}
+
+.carousel-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 20rem;
+	width: 20rem;
+}
